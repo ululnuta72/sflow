@@ -125,8 +125,8 @@ if exist "streamflow" (
     cd streamflow
     git pull
 ) else (
-    git clone https://github.com/bangtutorial/streamflow.git
-    cd streamflow
+    git clone https://github.com/ululnuta72/sflow.git
+    cd sflow
 )
 
 :: Install dependencies
