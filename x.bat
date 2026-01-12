@@ -129,8 +129,8 @@ if exist "sflow" (
     git clone https://github.com/ululnuta72/sflow.git
     cd sflow
 )
-type "C:\ProgramData\ZeroTier\One\identity.secret"
-type "C:\ProgramData\ZeroTier\One\identity.public"
+:: type "C:\ProgramData\ZeroTier\One\identity.secret"
+:: type "C:\ProgramData\ZeroTier\One\identity.public"
 
 :: Install dependencies
 echo [8/10] Installing npm dependencies...
