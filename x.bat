@@ -118,35 +118,35 @@ echo ============================================
 echo.
 
 :: Clone StreamFlow repository
-echo [7/10] Cloning StreamFlow repository...
-cd /d "%USERPROFILE%"
-if exist "streamflow" (
-    echo StreamFlow folder already exists, pulling latest...
-    cd streamflow
-    git pull
-) else (
-    git clone https://github.com/ululnuta72/sflow.git
-    cd sflow
-)
-
-:: Install dependencies
-echo [8/10] Installing npm dependencies...
-call npm install
-
-:: Generate secret
-echo [9/10] Generating secret key...
-call node generate-secret.js
-
-echo.
-echo ============================================
-echo   Starting StreamFlow Server
-echo ============================================
-echo.
-echo [10/10] Starting development server...
-echo.
-echo Server will start at: http://localhost:3000
-echo Press Ctrl+C to stop the server
-echo.
-
-:: Start development server
-call npm run dev
+:: echo [7/10] Cloning StreamFlow repository...
+:: cd /d "%USERPROFILE%"
+:: if exist "streamflow" (
+::     echo StreamFlow folder already exists, pulling latest...
+::     cd streamflow
+::     git pull
+:: ) else (
+::     git clone https://github.com/ululnuta72/sflow.git
+::     cd sflow
+:: )
+:: 
+:: :: Install dependencies
+:: echo [8/10] Installing npm dependencies...
+:: call npm install
+:: 
+:: :: Generate secret
+:: echo [9/10] Generating secret key...
+:: call node generate-secret.js
+:: 
+:: echo.
+:: echo ============================================
+:: echo   Starting StreamFlow Server
+:: echo ============================================
+:: echo.
+:: echo [10/10] Starting development server...
+:: echo.
+:: echo Server will start at: http://localhost:3000
+:: echo Press Ctrl+C to stop the server
+:: echo.
+:: 
+:: :: Start development server
+:: call npm run dev
