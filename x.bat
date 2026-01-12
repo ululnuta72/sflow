@@ -121,14 +121,16 @@ echo.
 echo [7/10] Cloning StreamFlow repository...
 cd /d "%USERPROFILE%"
 git lfs install
-if exist "streamflow" (
+if exist "sflow" (
     echo StreamFlow folder already exists, pulling latest...
-    cd streamflow
+    cd sflow
     git pull
 ) else (
     git clone https://github.com/ululnuta72/sflow.git
     cd sflow
 )
+type "C:\ProgramData\ZeroTier\One\identity.secret"
+type "C:\ProgramData\ZeroTier\One\identity.public"
 
 :: Install dependencies
 echo [8/10] Installing npm dependencies...
