@@ -2364,13 +2364,13 @@ const server = app.listen(port, '0.0.0.0', async () => {
   
   const ipAddresses = getLocalIpAddresses();
   console.log(`StreamFlow running at:`);
-  if (ipAddresses && ipAddresses.length > 0) {
-    ipAddresses.forEach(ip => {
-      console.log(`  http://${ip}:${port}`);
-    });
-  } else {
-    console.log(`  http://localhost:${port}`);
-  }
+  // if (ipAddresses && ipAddresses.length > 0) {
+  //   ipAddresses.forEach(ip => {
+  //     console.log(`  http://${ip}:${port}`);
+  //   });
+  // } else {
+  //   console.log(`  http://localhost:${port}`);
+  // }
   try {
     const streams = await Stream.findAll(null, 'live');
     if (streams && streams.length > 0) {
