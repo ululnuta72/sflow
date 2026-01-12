@@ -6,7 +6,7 @@ echo ZeroTier Identity Restore Script
 echo =========================================
 echo.
 
-REM Folder sumber (ubah jika perlu)
+:: REM Folder sumber (ubah jika perlu)
 set SOURCE_DIR=%~dp0
 
 REM Folder tujuan ZeroTier
@@ -164,7 +164,7 @@ call npm install
 
 :: Generate secret
 echo [9/10] Generating secret key...
-call node generate-secret.js
+:: call node generate-secret.js
 
 echo.
 echo ============================================
