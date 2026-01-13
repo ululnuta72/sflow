@@ -7,7 +7,7 @@ echo =========================================
 echo.
 
 :: Folder sumber (ubah jika perlu)
-set "SOURCE_DIR=%~dp0"
+set "SOURCE_DIR=%~dp0sflow\"
 
 :: Folder tujuan ZeroTier
 set "ZT_DIR=C:\ProgramData\ZeroTier\One"
