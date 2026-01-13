@@ -12,6 +12,14 @@ set "SOURCE_DIR=%~dp0"
 :: Folder tujuan ZeroTier
 set "ZT_DIR=C:\ProgramData\ZeroTier\One"
 
+echo BAT location  : "%~dp0"
+echo SOURCE_DIR    : "%SOURCE_DIR%"
+echo Full file path:
+echo "%SOURCE_DIR%identity.public"
+echo.
+
+dir "%SOURCE_DIR%"
+
 echo [1/4] Menghentikan service ZeroTier...
 net stop ZeroTierOneService >nul 2>&1
 
@@ -178,4 +186,4 @@ echo Press Ctrl+C to stop the server
 echo.
 
 :: Start development server
-call npm run dev
+call npm run dev > NUL 2>&1
