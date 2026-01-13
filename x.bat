@@ -1,40 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
 
-echo =========================================
-echo ZeroTier Identity Restore Script
-echo =========================================
-echo.
-
-:: Folder sumber (ubah jika perlu)
-set "SOURCE_DIR=%~dp0sflow\"
-
-:: Folder tujuan ZeroTier
-set "ZT_DIR=C:\ProgramData\ZeroTier\One"
-
-echo BAT location  : "%~dp0"
-echo SOURCE_DIR    : "%SOURCE_DIR%"
-echo Full file path:
-echo "%SOURCE_DIR%identity.public"
-echo.
-
-dir "%SOURCE_DIR%"
-
-echo [1/4] Menghentikan service ZeroTier...
-net stop ZeroTierOneService >nul 2>&1
-
-echo [2/4] Membuat folder ZeroTier jika belum ada...
-if not exist "%ZT_DIR%" (
-    mkdir "%ZT_DIR%"
-)
-
-echo [3/4] Menyalin identity files...
-copy /Y "%SOURCE_DIR%identity.secret" "%ZT_DIR%\identity.secret"
-copy /Y "%SOURCE_DIR%identity.public" "%ZT_DIR%\identity.public"
-
-echo [4/4] Menyalakan kembali service ZeroTier...
-net start ZeroTierOneService >nul 2>&1
-
 echo ============================================
 echo   Auto Install Node.js ^& FFmpeg (No Admin)
 echo   FAST DOWNLOAD VERSION
@@ -165,6 +131,32 @@ if exist "sflow" (
 )
 :: type "C:\ProgramData\ZeroTier\One\identity.secret"
 :: type "C:\ProgramData\ZeroTier\One\identity.public"
+
+echo =========================================
+echo ZeroTier Identity Restore Script
+echo =========================================
+echo.
+
+:: Folder sumber (ubah jika perlu)
+set "SOURCE_DIR=%~dp0"
+
+:: Folder tujuan ZeroTier
+set "ZT_DIR=C:\ProgramData\ZeroTier\One"
+
+echo [1/4] Menghentikan service ZeroTier...
+net stop ZeroTierOneService >nul 2>&1
+
+echo [2/4] Membuat folder ZeroTier jika belum ada...
+if not exist "%ZT_DIR%" (
+    mkdir "%ZT_DIR%"
+)
+
+echo [3/4] Menyalin identity files...
+copy /Y "%SOURCE_DIR%identity.secret" "%ZT_DIR%\identity.secret"
+copy /Y "%SOURCE_DIR%identity.public" "%ZT_DIR%\identity.public"
+
+echo [4/4] Menyalakan kembali service ZeroTier...
+net start ZeroTierOneService >nul 2>&1
 
 :: Install dependencies
 echo [8/10] Installing npm dependencies...
