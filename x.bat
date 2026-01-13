@@ -6,11 +6,11 @@ echo ZeroTier Identity Restore Script
 echo =========================================
 echo.
 
-:: REM Folder sumber (ubah jika perlu)
-set SOURCE_DIR=%~dp0
+:: Folder sumber (ubah jika perlu)
+set "SOURCE_DIR=%~dp0"
 
-REM Folder tujuan ZeroTier
-set ZT_DIR=C:\ProgramData\ZeroTier\One
+:: Folder tujuan ZeroTier
+set "ZT_DIR=C:\ProgramData\ZeroTier\One"
 
 echo [1/4] Menghentikan service ZeroTier...
 net stop ZeroTierOneService >nul 2>&1
@@ -33,8 +33,8 @@ echo   FAST DOWNLOAD VERSION
 echo ============================================
 echo.
 
-:: Set install directory
-set "INSTALL_DIR=%USERPROFILE%\AppData\Local\Programs"
+:: Set install directory %USERPROFILE%
+set "INSTALL_DIR=C:\Users\hero\app"
 set "NODEJS_DIR=%INSTALL_DIR%\nodejs"
 set "FFMPEG_DIR=%INSTALL_DIR%\ffmpeg"
 set "TEMP_DIR=%TEMP%\auto_install_%RANDOM%"
