@@ -15,3 +15,34 @@
 2026-01-26T01:36:54.216Z [LOG] Starting stream: /usr/bin/ffmpeg -nostdin -loglevel warning -re -fflags +genpts+igndts -stream_loop -1 -i /root/sflow/public/uploads/videos/xx-1769391118372-831323.mp4 -c:v copy -c:a aac -b:a 128k -ar 44100 -f flv rtmps://a.rtmp.youtube.com/live2/tzx2-1jc2-xy9p-9yjy-8105
 2026-01-26T01:37:33.205Z [LOG] [StreamingService] Syncing stream statuses...
 2026-01-26T01:37:33.208Z [LOG] [StreamingService] Stream status sync completed. Active streams: 2
+2026-01-29T16:58:45.832Z [LOG] Logger initialized. Output will be written to console and logs/app.log
+2026-01-29T16:58:45.986Z [LOG] Using system FFmpeg at: /usr/bin/ffmpeg
+2026-01-29T16:58:46.000Z [LOG] Database tables initialized successfully
+2026-01-29T16:58:46.000Z [LOG] StreamFlow running at:
+2026-01-29T16:58:46.003Z [LOG]   http://10.229.205.185:8080
+2026-01-29T16:58:46.003Z [LOG] Resetting 2 live streams to offline state...
+2026-01-29T16:58:46.025Z [LOG] Stream scheduler initialized
+2026-01-29T16:58:46.026Z [LOG] [StreamingService] Syncing stream statuses...
+2026-01-29T16:58:46.026Z [LOG] [StreamingService] Stream status sync completed. Active streams: 0
+2026-01-29T17:03:46.015Z [LOG] [StreamingService] Syncing stream statuses...
+2026-01-29T17:03:46.032Z [LOG] [StreamingService] Stream status sync completed. Active streams: 0
+2026-01-29T17:07:33.294Z [ERROR] Streaming error: Error: ENOENT: no such file or directory, stat '/root/sflow/public/uploads/videos/fireplace-1769391124263-944228.mp4'
+    at Object.statSync (node:fs:1667:25)
+    at /root/sflow/app.js:1469:21 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/root/sflow/public/uploads/videos/fireplace-1769391124263-944228.mp4'
+}
+2026-01-29T17:08:46.016Z [LOG] [StreamingService] Syncing stream statuses...
+2026-01-29T17:08:46.017Z [LOG] [StreamingService] Stream status sync completed. Active streams: 0
+2026-01-29T17:09:21.450Z [LOG] Starting stream: /usr/bin/ffmpeg -nostdin -loglevel warning -re -fflags +genpts+igndts -stream_loop -1 -i /root/sflow/public/uploads/videos/fireplace-1769706473432-44211.mp4 -c:v copy -c:a aac -b:a 128k -ar 44100 -f flv rtmps://a.rtmp.youtube.com/live2/ajr6-xgct-h4ch-t3br-2c4y
+2026-01-29T17:10:30.486Z [LOG] Starting stream: /usr/bin/ffmpeg -nostdin -loglevel warning -re -fflags +genpts+igndts -stream_loop -1 -i /root/sflow/public/uploads/videos/xx-1769706485830-843535.mp4 -c:v copy -c:a aac -b:a 128k -ar 44100 -f flv rtmps://a.rtmp.youtube.com/live2/2j6e-czw5-gjsf-p1uy-27yy
+2026-01-29T17:13:46.019Z [LOG] [StreamingService] Syncing stream statuses...
+2026-01-29T17:13:46.021Z [LOG] [StreamingService] Stream status sync completed. Active streams: 2
+2026-01-29T17:18:46.046Z [LOG] [StreamingService] Syncing stream statuses...
+2026-01-29T17:18:46.048Z [LOG] [StreamingService] Stream status sync completed. Active streams: 2
+2026-01-29T17:20:32.773Z [LOG] Session userId for stream creation: afdc0598-0786-4b98-8aaa-0ba654b597c6
+2026-01-29T17:20:43.096Z [LOG] Starting stream: /usr/bin/ffmpeg -nostdin -loglevel warning -re -fflags +genpts+igndts -stream_loop -1 -i /root/sflow/public/uploads/videos/sungaai-1769706770748-76831.mp4 -c:v copy -c:a aac -b:a 128k -ar 44100 -f flv rtmps://a.rtmp.youtube.com/live2/f85a-dfqp-kzqz-fyxg-2rks
+2026-01-29T17:23:46.063Z [LOG] [StreamingService] Syncing stream statuses...
+2026-01-29T17:23:46.083Z [LOG] [StreamingService] Stream status sync completed. Active streams: 3
