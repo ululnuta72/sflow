@@ -46,3 +46,5 @@
 2026-01-29T17:20:43.096Z [LOG] Starting stream: /usr/bin/ffmpeg -nostdin -loglevel warning -re -fflags +genpts+igndts -stream_loop -1 -i /root/sflow/public/uploads/videos/sungaai-1769706770748-76831.mp4 -c:v copy -c:a aac -b:a 128k -ar 44100 -f flv rtmps://a.rtmp.youtube.com/live2/f85a-dfqp-kzqz-fyxg-2rks
 2026-01-29T17:23:46.063Z [LOG] [StreamingService] Syncing stream statuses...
 2026-01-29T17:23:46.083Z [LOG] [StreamingService] Stream status sync completed. Active streams: 3
+2026-01-29T17:27:45.460Z [LOG] Session userId for stream creation: afdc0598-0786-4b98-8aaa-0ba654b597c6
+2026-01-29T17:27:53.439Z [LOG] Starting stream: /usr/bin/ffmpeg -nostdin -loglevel warning -re -fflags +genpts+igndts -stream_loop -1 -i /root/sflow/public/uploads/videos/rain-bokeh-1769706475897-105327.mp4 -c:v copy -c:a aac -b:a 128k -ar 44100 -f flv rtmps://a.rtmp.youtube.com/live2/m6kx-0b13-defw-sqcc-c9jv
