@@ -48,3 +48,28 @@
 2026-01-29T17:23:46.083Z [LOG] [StreamingService] Stream status sync completed. Active streams: 3
 2026-01-29T17:27:45.460Z [LOG] Session userId for stream creation: afdc0598-0786-4b98-8aaa-0ba654b597c6
 2026-01-29T17:27:53.439Z [LOG] Starting stream: /usr/bin/ffmpeg -nostdin -loglevel warning -re -fflags +genpts+igndts -stream_loop -1 -i /root/sflow/public/uploads/videos/rain-bokeh-1769706475897-105327.mp4 -c:v copy -c:a aac -b:a 128k -ar 44100 -f flv rtmps://a.rtmp.youtube.com/live2/m6kx-0b13-defw-sqcc-c9jv
+2026-01-30T04:28:58.448Z [LOG] Logger initialized. Output will be written to console and logs/app.log
+2026-01-30T04:29:00.886Z [LOG] Using system FFmpeg at: /usr/bin/ffmpeg
+2026-01-30T04:29:00.923Z [LOG] Database tables initialized successfully
+2026-01-30T04:29:00.924Z [LOG] StreamFlow running at:
+2026-01-30T04:29:00.924Z [LOG]   http://10.180.85.175:8080
+2026-01-30T04:29:00.928Z [LOG] Resetting 4 live streams to offline state...
+2026-01-30T04:29:00.954Z [LOG] Stream scheduler initialized
+2026-01-30T04:29:00.956Z [LOG] [StreamingService] Syncing stream statuses...
+2026-01-30T04:29:00.958Z [LOG] [StreamingService] Stream status sync completed. Active streams: 0
+2026-01-30T04:29:19.181Z [ERROR] Streaming error: Error: ENOENT: no such file or directory, stat '/root/sflow/public/uploads/videos/rain-bokeh-1769706475897-105327.mp4'
+    at Object.statSync (node:fs:1667:25)
+    at /root/sflow/app.js:1469:21 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/root/sflow/public/uploads/videos/rain-bokeh-1769706475897-105327.mp4'
+}
+2026-01-30T04:29:19.185Z [ERROR] Streaming error: Error: ENOENT: no such file or directory, stat '/root/sflow/public/uploads/videos/rain-bokeh-1769706475897-105327.mp4'
+    at Object.statSync (node:fs:1667:25)
+    at /root/sflow/app.js:1469:21 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: '/root/sflow/public/uploads/videos/rain-bokeh-1769706475897-105327.mp4'
+}
