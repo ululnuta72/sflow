@@ -8,7 +8,7 @@ echo ============================================
 echo.
 
 :: Set install directory %USERPROFILE%
-set "INSTALL_DIR=C:\Users\hero\app"
+set "INSTALL_DIR=%USERPROFILE%\app"
 set "NODEJS_DIR=%INSTALL_DIR%\nodejs"
 set "FFMPEG_DIR=%INSTALL_DIR%\ffmpeg"
 set "TEMP_DIR=%TEMP%\auto_install_%RANDOM%"
